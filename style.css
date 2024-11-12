@@ -2,3 +2,44 @@ html {
   background: #f2f1f4;
   color: #19171c;
 }
+
+.description {
+  display: none;
+}
+
+.title.active + .description {
+  display: block;
+}
+
+.section {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Hide all checkboxes */
+.toggle-checkbox {
+  display: none;
+}
+
+/* Style the title div */
+.title {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #d7565651;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+
+/* Initially hide descriptions */
+.description {
+  display: none;
+  padding: 10px;
+  border-left: 2px solid #ddd;
+  background-color: #fafafa;
+}
+
+/* Show description when checkbox is checked */
+.toggle-checkbox:checked + .title + .description {
+  display: block;
+}
